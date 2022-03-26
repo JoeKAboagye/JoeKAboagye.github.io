@@ -72,13 +72,10 @@ header a:hover {
 /* All About Project
 ------------------------------------ */
 .Game {
-  background-color: #0c090a;
-  margin: 0 0;
-  padding: 2px 0;
-  color: #ffffff;
   border-bottom: 1px solid silver;
 }
-.Developers {
+.Developers,
+.Game {
   background-color: #0c090a;
   margin: 0 0;
   padding: 2px 0;

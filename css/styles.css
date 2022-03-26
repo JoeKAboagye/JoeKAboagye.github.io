@@ -1,0 +1,93 @@
+/***********************************
+====================================
+Landing Page Styles
+(C) Joseph Aboagye
+====================================
+***********************************/
+
+/*--------------------------------
+Global Styles
+*/
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  background-color: rgba(255, 255, 255, 0);
+  color: #0e0f0f;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.Intro_End {
+  margin: 0 auto;
+  padding: 2px 0;
+}
+h1 {
+  font-size: 80px;
+  line-height: 1;
+  color: rgb(12, 11, 11);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+img {
+  width: 400px;
+  border-radius: 10px 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  margin: 10px;
+}
+
+/* Introduction
+------------------------------------*/
+header {
+  background: repeating-linear-gradient(
+    to left,
+    #6a4d81,
+    #e0de39,
+    rgb(2, 255, 23)
+  );
+  border-bottom: 1px solid silver;
+  text-align: center;
+}
+.Expose {
+  color: black;
+  font-weight: 600;
+  font-style: italic;
+}
+header a {
+  color: #0e0f0f;
+}
+header a:hover {
+  text-decoration: none;
+  color: #fd0202;
+}
+
+/* Ending
+-------------------------------------*/
+footer {
+  background: repeating-linear-gradient(
+    to left,
+    #e02eba,
+    #03032c,
+    rgb(83, 35, 2)
+  );
+  border-top: 1px solid silver;
+  text-align: center;
+}
+.Text-Content {
+  color: rgb(252, 252, 252);
+  font-weight: 600;
+  font-style: italic;
+}
+.Text-Content a {
+  color: #ffffff;
+}
+.Text-Content a:hover {
+  text-decoration: none;
+  color: #fd0202;
+}

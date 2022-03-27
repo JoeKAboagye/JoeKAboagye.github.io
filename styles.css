@@ -30,18 +30,18 @@ body {
   padding: 2px 0;
 }
 h1 {
-  font-size: 80px;
   line-height: 1;
   color: rgb(12, 11, 11);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 img {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
   border-radius: 10px 10px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   margin: 10px;
+}
+header,
+footer {
+  text-align: center;
 }
 
 /* Introduction
@@ -54,7 +54,6 @@ header {
     rgb(2, 255, 23)
   );
   border-bottom: 1px solid silver;
-  text-align: center;
 }
 .Expose {
   color: black;
@@ -71,6 +70,18 @@ header a:hover {
 
 /* All About Project
 ------------------------------------ */
+#History {
+  margin: 10px 50px;
+  text-align: center;
+}
+.CntrlKeys {
+  background-color: #175046;
+  display: inline-block;
+  border-radius: 4px;
+  padding: 20px 30px;
+  margin-top: 0%;
+  list-style-type: "\1F4BB";
+}
 .Game {
   border-bottom: 1px solid silver;
 }
@@ -84,9 +95,8 @@ header a:hover {
 h2 {
   text-align: center;
 }
-.Dev-Profile {
-  display: flex;
-  justify-content: center;
+h3 {
+  text-align: justify;
 }
 figure img {
   border-radius: 50%;
@@ -106,12 +116,12 @@ figure img {
   display: inline;
   color: #614b04;
 }
+
 /* Ending
 -------------------------------------*/
 footer {
   background: black;
   border-top: 1px solid silver;
-  text-align: center;
 }
 .Text-Content {
   color: rgb(252, 252, 252);
@@ -125,4 +135,50 @@ footer {
 .Text-Content a:hover {
   text-decoration: none;
   color: #fd0202;
+}
+
+/* Responsive
+------------------------------------*/
+@media screen and (min-width: 721px) {
+  img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+  h1 {
+    font-size: 80px;
+  }
+  #History {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+  .Game_Cntrls h3 {
+    text-align: center;
+  }
+  .Dev-Profile {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  #History {
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+  }
+  .Dev-Profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }

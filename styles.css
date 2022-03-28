@@ -45,6 +45,10 @@ footer {
 a {
   color: #ffffff;
 }
+a:hover {
+  text-decoration: none;
+  color: #fd0202;
+}
 
 /* Introduction
 ------------------------------------*/
@@ -57,13 +61,6 @@ header {
 .Expose {
   font-weight: 600;
   font-style: italic;
-}
-header a:hover {
-  text-decoration: none;
-  color: #fd0202;
-}
-header a {
-  color: rgb(3, 220, 248);
 }
 
 /* All About Project
@@ -98,6 +95,9 @@ header a {
   margin: 0 0;
   padding: 2px 0;
 }
+.For_ALX {
+  color: rgb(3, 220, 248);
+}
 h2 {
   text-align: center;
 }
@@ -117,7 +117,6 @@ figure img {
 }
 #GitHub {
   background: none;
-  border-radius: none;
   display: inline;
   color: #614b04;
 }
@@ -135,9 +134,13 @@ footer {
 .Text-Content a {
   background: none;
 }
-.Text-Content a:hover {
-  text-decoration: none;
-  color: #fd0202;
+.Links {
+  display: flex;
+  justify-content: space-around;
+  color: #fce302;
+}
+.Links a {
+  color: #805e01;
 }
 
 /* Responsive

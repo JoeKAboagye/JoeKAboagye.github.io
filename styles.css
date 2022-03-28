@@ -115,10 +115,9 @@ figure img {
   display: inline-block;
   margin: 0.2rem;
 }
-#GitHub {
-  background: none;
+.GitHub {
   display: inline;
-  color: #614b04;
+  color: #ac8505;
 }
 
 /* Ending

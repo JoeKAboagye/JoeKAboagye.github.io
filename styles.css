@@ -56,11 +56,12 @@ header {
   background-image: url(images/clark-van-der.jpg);
   background-size: contain;
   border-bottom: 1px solid silver;
-  color: rgb(235, 86, 17);
+  color: rgb(255, 1, 1);
 }
 .Expose {
   font-weight: 600;
   font-style: italic;
+  color: rgb(255, 208, 1);
 }
 
 /* All About Project
@@ -134,8 +135,6 @@ footer {
   background: none;
 }
 .Links {
-  display: flex;
-  justify-content: space-around;
   color: #fce302;
 }
 .Links a {
@@ -164,6 +163,10 @@ footer {
   .Dev-Profile {
     display: flex;
     justify-content: center;
+  }
+  .Links {
+    display: flex;
+    justify-content: space-around;
   }
 }
 

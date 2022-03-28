@@ -18,7 +18,7 @@ html {
 }
 body {
   background-color: rgb(255, 255, 255);
-  color: #0e0f0f;
+  color: #ffffff;
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
@@ -31,7 +31,6 @@ body {
 }
 h1 {
   line-height: 1;
-  color: rgb(12, 11, 11);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 img {
@@ -43,29 +42,28 @@ header,
 footer {
   text-align: center;
 }
+a {
+  color: #ffffff;
+}
 
 /* Introduction
 ------------------------------------*/
 header {
-  background: repeating-linear-gradient(
-    to left,
-    #6a4d81,
-    #e0de39,
-    rgb(2, 255, 23)
-  );
+  background-image: url(images/clark-van-der.jpg);
+  background-size: contain;
   border-bottom: 1px solid silver;
+  color: rgb(235, 86, 17);
 }
 .Expose {
-  color: black;
   font-weight: 600;
   font-style: italic;
-}
-header a {
-  color: #0e0f0f;
 }
 header a:hover {
   text-decoration: none;
   color: #fd0202;
+}
+header a {
+  color: rgb(3, 220, 248);
 }
 
 /* All About Project
@@ -75,7 +73,12 @@ header a:hover {
   text-align: center;
 }
 .CntrlKeys {
-  background-color: #175046;
+  background: repeating-linear-gradient(
+    to bottom,
+    #420177,
+    #757301,
+    rgb(0, 102, 9)
+  );
   display: inline-block;
   border-radius: 4px;
   padding: 20px 30px;
@@ -83,14 +86,17 @@ header a:hover {
   list-style-type: "\1F4BB";
 }
 .Game {
-  border-bottom: 1px solid silver;
+  background-image: url(images/darius-cotoi.jpg);
+}
+.Developers {
+  background-image: url(images/jonathan-bean.jpg);
+  background-size: cover;
+  background-position: left;
 }
 .Developers,
 .Game {
-  background-color: #0c090a;
   margin: 0 0;
   padding: 2px 0;
-  color: #ffffff;
 }
 h2 {
   text-align: center;
@@ -102,7 +108,6 @@ figure img {
   border-radius: 50%;
 }
 .btn a {
-  color: #f7fff7;
   background: #2f3061;
   text-decoration: none;
   padding: 2px;
@@ -124,12 +129,10 @@ footer {
   border-top: 1px solid silver;
 }
 .Text-Content {
-  color: rgb(252, 252, 252);
   font-weight: 600;
   font-style: italic;
 }
 .Text-Content a {
-  color: #ffffff;
   background: none;
 }
 .Text-Content a:hover {

@@ -189,4 +189,8 @@ footer {
     flex-direction: column;
     justify-content: space-between;
   }
+  .Links {
+    display: inline-block;
+    text-align: justify;
+  }
 }

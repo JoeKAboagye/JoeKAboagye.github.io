@@ -83,8 +83,8 @@ header a {
   background: repeating-linear-gradient(
     to bottom,
     #013e77,
-    rgb(25, 182, 4),
-    #6ea803
+    rgba(25, 182, 4, 0.3),
+    #1a015f
   );
   display: inline-block;
   border-radius: 10px;

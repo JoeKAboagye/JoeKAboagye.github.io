@@ -9,11 +9,15 @@ Landing Page Styles
 Global Styles
 */
 html {
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
   box-sizing: border-box;
 }
 *,
 *:before,
 *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
 body {
@@ -41,10 +45,14 @@ header,
 footer {
   text-align: center;
 }
+:focus{
+  outline: none;
+}
 a {
   color: #ffffff;
 }
-a:hover {
+a:hover, 
+a:focus {
   text-decoration: none;
   color: #fd0202;
 }
@@ -116,7 +124,11 @@ header a {
   color: #420142;
 }
 .Game {
-  background-image: url(images/darius-cotoi.jpg);
+  background-image: radial-gradient(ellipse at top, 
+  #0c09c4, transparent),radial-gradient(ellipse at bottom,
+  #4d4c1b, transparent), radial-gradient(ellipse at top, 
+  #c00808, transparent),radial-gradient(ellipse at bottom,
+  #4d1b46, transparent);
 }
 .Developers {
   background-image: url(images/wil-stewart.jpg);
@@ -153,7 +165,7 @@ figure img {
 }
 .GitHub {
   display: inline;
-  color: #ac8505;
+  color: #36f107;
 }
 
 /* Ending
@@ -170,11 +182,9 @@ footer {
   background: none;
 }
 .Links {
-  color: #fce302;
+  color: #f3f2eb;
 }
-.Links a {
-  color: #805e01;
-}
+
 
 /* Responsive
 ------------------------------------*/
@@ -188,14 +198,13 @@ footer {
     font-size: 80px;
   }
   #History {
-    display: flex;
-    justify-content: center;
     flex-flow: row wrap;
   }
   .Game_Cntrls h3 {
     text-align: center;
   }
-  .Dev-Profile {
+  .Dev-Profile,
+  #History {
     display: flex;
     justify-content: center;
   }
